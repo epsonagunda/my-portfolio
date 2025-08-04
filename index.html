@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Epson Agunda - Portfolio</title>
+  <style>
+    :root {
+      --primary: #0073e6;
+      --background: #f9f9f9;
+      --card-bg: #fff;
+      --text: #333;
+    }
+
+    body.dark {
+      --background: #1e1e1e;
+      --card-bg: #2b2b2b;
+      --text: #f1f1f1;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 4rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--card-bg);
+      z-index: 1000;
+      padding: 1rem 0;
+      border-bottom: 2px solid var(--primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .nav a {
+      margin-left: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      color: var(--primary);
+    }
+
+    .toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    section {
+      background: var(--card-bg);
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .job-title:hover {
+      color: var(--primary);
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    ul {
+      list-style: disc inside;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .badges span {
+      background-color: #e6f0ff;
+      color: #004a99;
+      padding: 0.4rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      transition: transform 0.2s ease;
+    }
+
+    .badges span:hover {
+      transform: scale(1.05);
+      background-color: var(--primary);
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="title">Epson Agunda</div>
+  <div class="nav">
+    <a href="#summary">Summary</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <button class="toggle" onclick="toggleTheme()">🌙</button>
+  </div>
+</header>
+
+<section id="summary">
+  <h2>Professional Summary</h2>
+  <p>Dynamic and dedicated Customer Care Representative with over 8 years of experience delivering exceptional service in high-pressure environments. Skilled in handling high call volumes, billing software (Slade, Smart, LCT, MTIBA, SHA), and exceeding customer expectations through professionalism and problem-solving.</p>
+</section>
+
+<section id="skills">
+  <h2>Key Skills</h2>
+  <ul>
+    <li>Customer Service & Call Center Support</li>
+    <li>Conflict Resolution & Active Listening</li>
+    <li>Billing Software & Troubleshooting</li>
+    <li>Upselling, Cross-selling & Retention</li>
+  </ul>
+
+  <div class="badges">
+    <span>Slade</span><span>Smart</span><span>LCT</span><span>MTIBA</span><span>SHA</span>
+    <span>MS Office</span><span>Python</span><span>Networking</span><span>Time Management</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+
+  <div>
+    <div class="job-title">Customer Care Representative – Bliss Medical Centre (2024–Present)</div>
+    <ul>
+      <li>Front desk support, insurance verification, and billing tasks</li>
+      <li>Live chat, email, and phone-based resolution</li>
+      <li>Supported new hires with service training</li>
+    </ul>
+  </div>
+
+  <div>
+    <div class="job-title">Customer Service Executive – Medicross Medical Centre (2018–2024)</div>
+    <ul>
+      <li>Managed high call volume and technical support</li>
+      <li>Insurance claims handling and patient liaison</li>
+    </ul>
+  </div>
+
+  <div>
+    <div class="job-title">Front Desk – Clinix Voi (2014–2018)</div>
+    <ul>
+      <li>Managed patient records and coordinated care</li>
+      <li>Assisted in implementing feedback systems</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education & Certifications</h2>
+  <ul>
+    <li>Full Stack Software Engineering – ALX (2023–2024)</li>
+    <li>Cybersecurity, Ethical Hacking – Cisco Network Academy</li>
+    <li>SQL & Python – Institute of Software Technology (2020)</li>
+  </ul>
+
+  <div class="badges">
+    <span>Full Stack Dev</span><span>Ethical Hacking</span><span>Cybersecurity</span>
+    <span>SQL</span><span>Python</span><span>Networking</span><span>Data Science</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p><strong>Phone:</strong> <a href="tel:+254705250764">+254 705 250 764</a></p>
+  <p><strong>Email:</strong> <a href="mailto:epsonagunda182@gmail.com">epsonagunda182@gmail.com</a></p>
+  <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/epson-agunda" target="_blank">linkedin.com/in/epson-agunda</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Epson Agunda. All rights reserved.
+</footer>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('dark');
+    const toggle = document.querySelector('.toggle');
+    toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+  }
+</script>
+
+</body>
+</html>
