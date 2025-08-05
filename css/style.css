@@ -88,8 +88,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 100px 20px;
-    background-image: url('assets/epson.jpg'); /* Your background image */
+    padding: 50px 10px;
+    background-image: url('assets/img/epson.jpg'); /* Your background image */
     background-size: cover; /* Ensure the image covers the section */
     background-position: center; /* Center the image */
     color: #fff;
@@ -108,7 +108,7 @@ body {
 }
 
 .home__data {
-    max-width: 500px;
+    max-width: 200px;
     z-index: 2;
 }
 
