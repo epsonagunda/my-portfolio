@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <title>Epson Agunda Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <title>Epson Agunda - Portfolio</title>
 </head>
+
 <body>
+
     <!--===== HEADER =====-->
     <header class="l-header">
         <nav class="nav bd-grid">
@@ -19,22 +22,25 @@
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
             <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+                <i class="bx bx-menu"></i>
             </div>
         </nav>
     </header>
 
+    <!--===== MAIN =====-->
     <main class="l-main">
+
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Epson</span><br> Customer Care Expert</h1>
-                <a href="#contact" class="button">Contact</a>
+                <h1 class="home__title">Hello, I'm <span class="home__title-color">Epson</span><br> Customer Care Expert</h1>
+                <p class="home__text">A dynamic professional with over 8 years of experience in customer service and technical support. Ready to help your business grow.</p>
+                <a href="#contact" class="button">Get in Touch</a>
             </div>
 
             <div class="home__social">
@@ -43,120 +49,107 @@
             </div>
 
             <div class="home__img">
-                <svg class="home__blob" viewBox="0 0 479 467">
-                    <mask id="mask0" mask-type="alpha">
-                        <path d="..."/>
-                    </mask>
-                    <g mask="url(#mask0)">
-                        <path d="..."/>
-                        <image class="home__blob-img" x="50" y="60" href="assets/img/epson.jpg"/>
-                    </g>
-                </svg>
+                <img src="assets/img/epson.jpg" alt="Epson Agunda Image" class="home__image">
             </div>
         </section>
 
         <!--===== ABOUT =====-->
         <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/img/about.jpg" alt="">
+                    <img src="assets/img/about.jpg" alt="About Image">
                 </div>
-                <div>
-                    <h2 class="about__subtitle">I'm Epson Agunda</h2>
-                    <p class="about__text">A dynamic and dedicated Customer Care Representative with 8+ years' experience delivering excellent service in fast-paced environments. Proficient in billing platforms like Slade, Smart, MTIBA, and SHA, and equipped with tech skills in Python, Networking, and Full Stack Development.</p>
+                <div class="about__text">
+                    <h3 class="about__subtitle">Who I Am</h3>
+                    <p>A dedicated Customer Care Representative with 8+ years of experience across various sectors, specializing in customer service, technical support, and customer relationship management.</p>
                 </div>
             </div>
         </section>
 
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills__container bd-grid">          
-                <div>
-                    <h2 class="skills__subtitle">Professional Skills</h2>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bx-headphone skills__icon'></i>
-                            <span class="skills__name">Customer Service</span>
-                        </div>
-                        <div class="skills__bar skills__html"></div>
-                        <div><span class="skills__percentage">95%</span></div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bx-code-alt skills__icon'></i>
-                            <span class="skills__name">Python</span>
-                        </div>
-                        <div class="skills__bar skills__css"></div>
-                        <div><span class="skills__percentage">80%</span></div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bx-network-chart skills__icon'></i>
-                            <span class="skills__name">Networking</span>
-                        </div>
-                        <div class="skills__bar skills__js"></div>
-                        <div><span class="skills__percentage">70%</span></div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bx-shield skills__icon'></i>
-                            <span class="skills__name">Cybersecurity</span>
-                        </div>
-                        <div class="skills__bar skills__ux"></div>
-                        <div><span class="skills__percentage">75%</span></div>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills__container bd-grid">
+                <div class="skills__item">
+                    <h3 class="skills__subtitle">Customer Service</h3>
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 95%;">95%</div>
                     </div>
                 </div>
 
-                <div>
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                <div class="skills__item">
+                    <h3 class="skills__subtitle">Python Development</h3>
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+
+                <div class="skills__item">
+                    <h3 class="skills__subtitle">Networking</h3>
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+
+                <div class="skills__item">
+                    <h3 class="skills__subtitle">Cybersecurity</h3>
+                    <div class="skills__bar">
+                        <div class="skills__percentage" style="width: 75%;">75%</div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!--===== EXPERIENCE =====-->
-        <section class="work section" id="work">
-            <h2 class="section-title">Experience</h2>
+        <section class="work section" id="experience">
+            <h2 class="section-title">Professional Experience</h2>
             <div class="work__container bd-grid">
-                <div class="work__img"><p><strong>Customer Care Representative</strong><br>Bliss Medical Centre (2024–Present)</p></div>
-                <div class="work__img"><p><strong>Customer Service Executive</strong><br>Medicross Medical Centre (2018–2024)</p></div>
-                <div class="work__img"><p><strong>Front Desk</strong><br>Clinix Voi (2014–2018)</p></div>
+                <div class="work__item">
+                    <h3>Customer Care Representative</h3>
+                    <p>Bliss Medical Centre (2024–Present)</p>
+                </div>
+                <div class="work__item">
+                    <h3>Customer Service Executive</h3>
+                    <p>Medicross Medical Centre (2018–2024)</p>
+                </div>
+                <div class="work__item">
+                    <h3>Front Desk</h3>
+                    <p>Clinix Voi (2014–2018)</p>
+                </div>
             </div>
         </section>
 
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title">Contact Me</h2>
             <div class="contact__container bd-grid">
                 <form action="#" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="email" placeholder="Email" class="contact__input">
-                    <textarea name="" cols="0" rows="10" placeholder="Your Message" class="contact__input"></textarea>
-                    <input type="submit" value="Send" class="contact__button button">
+                    <input type="text" placeholder="Your Name" class="contact__input" required>
+                    <input type="email" placeholder="Your Email" class="contact__input" required>
+                    <textarea placeholder="Your Message" class="contact__input" rows="5" required></textarea>
+                    <input type="submit" value="Send Message" class="contact__button button">
                 </form>
             </div>
         </section>
+
     </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
         <p class="footer__title">Epson Agunda</p>
         <div class="footer__social">
-            <a href="https://facebook.com" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="https://instagram.com" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="https://twitter.com" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            <a href="https://facebook.com" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+            <a href="https://instagram.com" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+            <a href="https://twitter.com" class="footer__icon"><i class="bx bxl-twitter"></i></a>
         </div>
-        <p class="footer__copy">&#169; 2025 Epson Agunda. All rights reserved.</p>
+        <p class="footer__copy">&#169; 2025 Epson Agunda. All Rights Reserved.</p>
     </footer>
 
-    <!--===== SCROLL REVEAL =====-->
+    <!--===== SCROLL REVEAL SCRIPT =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
-
-
