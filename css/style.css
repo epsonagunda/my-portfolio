@@ -1,1 +1,160 @@
 
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+
+    /*===== Colors =====*/
+    --first-color: #0e2431;
+    --second-color: #03a9f4;
+    --text-color: #555;
+
+    /*===== Font and typography =====*/
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+
+    /*===== Margins =====*/
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /*===== z index =====*/
+    --z-back: -10;
+    --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*===== LAYOUT =====*/
+.bd-grid {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 1024px;
+    margin-left: var(--mb-4);
+    margin-right: var(--mb-4);
+}
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: var(--z-fixed);
+    box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
+
+/*===== NAV =====*/
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    font-weight: var(--font-semi);
+    color: var(--first-color);
+}
+
+.nav__menu {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+}
+
+.nav__link {
+    color: var(--first-color);
+    font-weight: var(--font-semi);
+}
+
+.nav__toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*===== HOME =====*/
+.home {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.home__data {
+    text-align: center;
+}
+
+.home__title {
+    font-size: var(--big-font-size);
+    color: var(--first-color);
+}
+
+.home__title-color {
+    color: var(--second-color);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--second-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-semi);
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #0288d1;
+}
+
+/* Add responsive behavior */
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
