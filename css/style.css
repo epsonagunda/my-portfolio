@@ -84,6 +84,69 @@ body {
 }
 
 
+/* Home Section */
+.home {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically align the content */
+    justify-content: space-between; /* Space between the content and image */
+    padding: 100px 20px;
+    background-image: url('assets/epson.jpg'); /* Background image optional, remove if only one image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+}
+
+.home__data {
+    flex: 1; /* Takes 1 part of the space (1/4) */
+    max-width: 400px; /* Limit text section width */
+    padding-right: 20px;
+}
+
+.home__title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.home__title-color {
+    color: #f4a261;
+}
+
+.home__text {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.button {
+    background: #f4a261;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #e07b53;
+}
+
+.home__img {
+    flex: 3; /* Takes 3 parts of the space (3/4) */
+    max-width: 100%; /* Ensures it doesn't overflow */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+}
+
+.home__image {
+    width: 100%; /* Ensures image fills its container */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    height: 100%; /* Makes image take full container height */
+}
+
+
 
 
 
