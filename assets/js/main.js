@@ -1,3 +1,4 @@
+// Toggle mobile menu
 const toggle = document.getElementById('nav-toggle');
 const nav = document.getElementById('nav-menu');
 
@@ -6,4 +7,3 @@ if (toggle && nav) {
         nav.classList.toggle('show');
     });
 }
-
